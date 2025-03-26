@@ -38,7 +38,7 @@ jobs:
           git checkout -b $temp_branch_name
 
           echo "CNAME merge=ours" > .gitattributes
-          echo "public/u/* merge=ours" >> .gitattributes
+          echo "public/n/* merge=ours" >> .gitattributes
 
           # Merge changes from the template repo
           git merge template/main --allow-unrelated-histories --strategy-option theirs
